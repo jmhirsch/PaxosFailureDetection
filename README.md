@@ -1,28 +1,23 @@
-# cpsc416_proj_johnnybc_mikuh_nbosse_jmhirsch_sassansh_fbcaiado
+# Server Failure Detection with Paxos
 
-## Server Failure Detection with Paxos
+## About the Project
 
-<br>
-
-### Members:
-
-- Sassan Shokoohi (sassansh)
-- Naithan Bosse (nbosse)
-- Johnny Li (johnnybc)
-- Felipe Caiado (fbcaiado)
-- Ken Utsunomiya (mikuh)
-- Jonathan Hirsch (jmhirsch)
+- Distributed server failure detection for cloud nodes using Paxos
+- Paxos algorithm runs as a library on top of a server node
+- Each node can implement a proposer, acceptor, learner, or all 3. 
+- Test implementation uses Azure VMs (currently offline)
+- Config files can be edited to modify IPs of servers for testing
 
 <br>
 
-### References
+## References
 
 1. Adapted A3
 2. Method signatures for Proposer.go, Acceptor.go, and Learner.go are informed by the following project: https://pkg.go.dev/github.com/kkdai/paxos
 
 
 
-### To use cloudrun.sh
+## To use cloudrun.sh
 
 1. Make sure you have sshpass installed by running `brew install hudochenkov/sshpass/sshpass` on macOS, or by installing the package using your preferred package manager
 2. Run `./cloudrun.sh -r`
@@ -59,3 +54,12 @@ partition | p <server1> <[servers]> - partitions server <server1> from server <[
 unpartition | up <server1> <[servers]> - unpartitions server <server1> from <[servers]>
 unpartitionall | upa - unpartitions all servers by resetting their IPTables
 ```
+
+## Credit to:
+
+
+- Sassan Shokoohi
+- Jonathan Hirsch
+- Naithan Bosse
+- Johnny Li
+- Ken Utsunomiya
