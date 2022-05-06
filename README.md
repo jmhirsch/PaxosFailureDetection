@@ -7,6 +7,7 @@
 - Each node can implement a proposer, acceptor, learner, or all 3. 
 - Test implementation uses Azure VMs (currently offline)
 - Config files can be edited to modify IPs of servers for testing
+- Traces can be viewed using the [shiviz tool here](https://bestchai.bitbucket.io/shiviz/)
 
 <br>
 
